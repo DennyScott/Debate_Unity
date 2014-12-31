@@ -48,14 +48,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 300
-        inSlope: -1130
-        outSlope: -1130
+        value: 0
+        inSlope: -530
+        outSlope: -530
         tangentMode: 10
       - time: .5
         value: -265
-        inSlope: -523
-        outSlope: -523
+        inSlope: -223
+        outSlope: -223
         tangentMode: 10
       - time: .75
         value: -244
@@ -73,6 +73,20 @@ AnimationClip:
     path: 
     classID: 224
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IgnoreParentGroups
+    path: 
+    classID: 225
+    script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -85,6 +99,12 @@ AnimationClip:
       attribute: 538195251
       script: {fileID: 0}
       classID: 224
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 1596511488
+      script: {fileID: 0}
+      classID: 225
       customType: 0
       isPPtrCurve: 0
     - path: 0
@@ -145,14 +165,14 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 300
-        inSlope: -1130
-        outSlope: -1130
+        value: 0
+        inSlope: -530
+        outSlope: -530
         tangentMode: 10
       - time: .5
         value: -265
-        inSlope: -523
-        outSlope: -523
+        inSlope: -223
+        outSlope: -223
         tangentMode: 10
       - time: .75
         value: -244
@@ -169,6 +189,20 @@ AnimationClip:
     attribute: m_AnchoredPosition.y
     path: 
     classID: 224
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_IgnoreParentGroups
+    path: 
+    classID: 225
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_Events: []
