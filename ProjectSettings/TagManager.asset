@@ -12,8 +12,8 @@ TagManager:
   Builtin Layer 5: UI
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: Cards
-  User Layer 9: 
+  User Layer 8: CardImage
+  User Layer 9: CardBackground
   User Layer 10: 
   User Layer 11: 
   User Layer 12: 
@@ -41,11 +41,15 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
+  - name: Background
+    userID: 2
+    uniqueID: 2186178281
+    locked: 0
   - name: Cards
     userID: 1
     uniqueID: 3222990513
     locked: 0
-  - name: Background
-    userID: 2
-    uniqueID: 2186178281
+  - name: 
+    userID: 3
+    uniqueID: 2209387695
     locked: 0
