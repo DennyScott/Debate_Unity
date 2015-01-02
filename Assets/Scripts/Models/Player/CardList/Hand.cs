@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 public class Hand : CardList {
 
-	private List<Card> _hand;
+	private List<Card> hand;
 
 	public Hand() : base(){
-		full = GeneralConstants.FULL_HAND;
+		Full = GeneralConstants.FULL_HAND;
 	}
 
 }

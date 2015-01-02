@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class Deck : CardList {
 
 	public Deck() : base() {
-		full = GeneralConstants.DECK_SIZE;
+		Full = GeneralConstants.DECK_SIZE;
 	}
 
 	public bool AddCardInRandomPosition(Card card){
@@ -29,11 +29,11 @@ public class Deck : CardList {
 	}
 
 	public void ShuffleDeck() {
-		for (int i = 0; i < _cardList.Count; i++) {
-			Card temp = _cardList[i];
-			int randomIndex = Random.Range(i, _cardList.Count);
-			_cardList[i] = _cardList[randomIndex];
-			_cardList[randomIndex] = temp;
+		for (int i = 0; i < cardList.Count; i++) {
+			Card temp = cardList[i];
+			int randomIndex = Random.Range(i, cardList.Count);
+			cardList[i] = cardList[randomIndex];
+			cardList[randomIndex] = temp;
 		}
 	}
 }

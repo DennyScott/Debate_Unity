@@ -2,22 +2,22 @@
 using System.Collections;
 
 public class Card {
-	private Player _owner;
-	private string _name;
+	private Player Owner;
+	private string Name;
 
 	public Card(Player owner, string text) {
-		this.owner = owner;
-		this._name = text;
+		this.Owner = owner;
+		this.Name = text;
 	}
 
 	public Player owner {
-		get {return _owner;}
-		set {_owner = value;}
+		get {return Owner;}
+		set {Owner = value;}
 	}
 
 	public string name {
-		get {return _name;}
-		set {_name = value;}
+		get {return Name;}
+		set {Name = value;}
 	}
 
 }

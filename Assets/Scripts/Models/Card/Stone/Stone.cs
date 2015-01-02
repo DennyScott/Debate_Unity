@@ -3,14 +3,18 @@ using System.Collections;
 
 public class Stone : Card {
 
-	private StoneColor _color;
+	private StoneColor Color;
+
+	public Stone(Player owner, string name) : base(owner, name) {
+		this.Color = StoneColor.NONE;
+	}
 
 	public Stone(Player owner, string name, StoneColor color): base(owner, name){
-		this._color = color;
+		this.Color = color;
 	}
 
 	public StoneColor color {
-		get {return _color;}
-		set {_color = value;}
+		get {return Color;}
+		set {Color = value;}
 	}
 }

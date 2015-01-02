@@ -3,40 +3,40 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Player {
-	private string _name;
-	private int _health;
-	private List<StatusEffect> _statusEffects;
-	private Hand _hand;
-	private Deck _deck;
+	private string Name;
+	private int Health;
+	private List<StatusEffect> StatusEffects;
+	private Hand Hand;
+	private Deck Deck;
 
 	public Player(string name){
-		_name = name;
-		_health = GeneralConstants.STARTING_HEATH;
-		_deck = new Deck();
-		_hand = new Hand();
-		_statusEffects = new List<StatusEffect>();
+		this.Name = name;
+		this.Health = GeneralConstants.STARTING_HEATH;
+		Deck = new Deck();
+		Hand = new Hand();
+		this.StatusEffects = new List<StatusEffect>();
 	}
 
 	public string name {
-		get { return _name; }
-		set { _name = value; }
+		get { return Name; }
+		set { Name = value; }
 	}
 
 	public int health {
-		get { return _health; }
-		set { _health = value; }
+		get { return Health; }
+		set { Health = value; }
 	}
 
 	public List<StatusEffect> statusEffects {
-		get { return _statusEffects; }
+		get { return StatusEffects; }
 	}
 
 	public Hand hand {
-		get { return _hand; }
+		get { return Hand; }
 	}
 
 	public Deck deck {
-		get { return _deck; }
+		get { return Deck; }
 	}
 
 	public int RemoveHealth(int damageAmount) {
@@ -44,15 +44,15 @@ public class Player {
 	}
 
 	public bool DrawCard() {
-		return _hand.AddCard(_deck.DrawCard());
+		return Hand.AddCard(Deck.DrawCard());
 	}
 
 	public List<bool> DrawCard(int number){
-		return _hand.AddCard(_deck.DrawCard(number));
+		return Hand.AddCard(Deck.DrawCard(number));
 	}
 
 	public List<bool> DrawMaxCards() {
-		int missingCards = GeneralConstants.FULL_HAND - _hand.Size();
+		int missingCards = GeneralConstants.FULL_HAND - Hand.Size();
 		return DrawCard (missingCards);
 	}
 

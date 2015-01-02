@@ -4,22 +4,22 @@ using System.Collections.Generic;
 
 public class CardList : ICardList {
 
-	protected List<Card> _cardList;
-	protected int _full;
+	protected List<Card> cardList;
+	protected int Full;
 
 	public CardList() {
-		_cardList = new List<Card>();
-		_full = GeneralConstants.DEFAULT_CARDLIST_FULL;
+		this.cardList = new List<Card>();
+		this.Full = GeneralConstants.DEFAULT_CARDLIST_FULL;
 	}
 
 	public int full {
-		get { return full; }
-		set { full = value; }
+		get { return Full; }
+		set { Full = value; }
 	}
 
 	public bool AddCard(Card card){
 		if(!IsFull() && card != null){
-			_cardList.Add(card);
+			cardList.Add(card);
 			return true;
 		}
 		return false;
@@ -35,35 +35,35 @@ public class CardList : ICardList {
 
 	public bool AddCard(Card card, int position){
 		if(!IsFull() && card != null && position < Size() && position > -1){
-			_cardList.Insert(position, card);
+			cardList.Insert(position, card);
 			return true;
 		}
 		return false;
 	}
 
 	public bool IsFull() {
-		return _cardList.Count >= _full;
+		return cardList.Count >= Full;
 	}
 
 	public bool IsEmpty() {
-		return _cardList.Count == 0;
+		return cardList.Count == 0;
 	}
 
 	public int Size() {
-		return _cardList.Count;
+		return cardList.Count;
 	}
 
 	public Card GetCard(int position){
-		if(_cardList.Count-1 >= position) {
-			return _cardList[position];
+		if(cardList.Count-1 >= position) {
+			return cardList[position];
 		}
 		return null;
 	}
 
 	public Card RemoveCard(int position){
-		if(_cardList.Count-1 >= position) {
-			Card card = _cardList[position];
-			_cardList.RemoveAt(position);
+		if(cardList.Count-1 >= position) {
+			Card card = cardList[position];
+			cardList.RemoveAt(position);
 			return card;
 		}
 		return null;
